@@ -14,4 +14,13 @@ client.on('message', msg => {
     }
   });
  
+
+
+client.on('message', msg => {
+    if (msg.content === 'لينا') {
+      msg.channel.send('**شو بدك منها **');
+    }
+  });
+
+
 client.login(process.env.BOT_TOKEN);// لا تغير فيها شيء
