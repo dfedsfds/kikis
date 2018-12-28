@@ -5,5 +5,13 @@ var prefix = "$";
 client.on('guildMemberAdd', member=> {
     member.addRole(member.guild.roles.find("name","SV."));
     });
+
+
+
+client.on('message', msg => {
+    if (msg.content === '.') {
+      msg.reply('**welcome to Strive.**');
+    }
+  });
  
 client.login(process.env.BOT_TOKEN);// لا تغير فيها شيء
