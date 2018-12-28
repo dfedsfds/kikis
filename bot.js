@@ -10,7 +10,7 @@ client.on('guildMemberAdd', member=> {
 
 client.on('message', msg => {
     if (msg.content === '.') {
-      msg.reply('**welcome to Strive.**');
+      msg.channel.send('**welcome to Strive.**');
     }
   });
  
